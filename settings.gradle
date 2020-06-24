@@ -1,0 +1,3 @@
+rootProject.name = 'Grimoire-Mixins-1.12.2'
+
+include 'Mixin-Template'
