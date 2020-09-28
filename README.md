@@ -33,6 +33,13 @@ Seriously, don't throw all of them if you don't need them!
 * Disable BlackHoleUnit EMPTY and FILL buttons, to prevent dupes on some rare cases.
 * Requirements:
   * IndustrialForegoing Mod
+  
+###### ThaumCraft-Mixin
+
+* Attempt to "registerComplexObjectTags" assync, reducing StartupGame Time on large modpacks in more than 1 minute.
+  * This is still being tested, may not be good for 'every case scenario'
+* Requirements:
+  * ThaumCraft Mod
 
 ###### WorldEdit-Mixin
 
