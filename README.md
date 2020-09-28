@@ -22,7 +22,13 @@ Some modules may require other modules.
 There are several modules for different things... just use the ones you want :V
 Seriously, don't throw all of them if you don't need them!
 
-##### IndustrialForegoing-Mixin
+###### ExCompressum-Mixin
+
+* Reload the mod after the POST_INIT event to fix some sync issues with drop chances and JEI
+* Requirements:
+  * ExCompressum Mod
+
+###### IndustrialForegoing-Mixin
 
 * Disable BlackHoleUnit EMPTY and FILL buttons, to prevent dupes on some rare cases.
 * Requirements:
