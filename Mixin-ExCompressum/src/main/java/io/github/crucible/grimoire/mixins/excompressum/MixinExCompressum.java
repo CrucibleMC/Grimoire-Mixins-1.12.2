@@ -18,8 +18,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.Iterator;
-
 @Mixin(value = ExCompressum.class, remap = false)
 public abstract class MixinExCompressum {
 
@@ -31,6 +29,9 @@ public abstract class MixinExCompressum {
      * @author brunoxkk0
      * @reason Reload ExCompressum after PostINIT because some of its drops
      * will not bet loaded properly on other mods, like JEI
+     *
+     * As well as some rebalance on the weights must be done after post_init
+     * when recipes are changed thought other mods
      */
     @Inject(method = {"postInit"}, at = {@At("RETURN")})
     @Mod.EventHandler

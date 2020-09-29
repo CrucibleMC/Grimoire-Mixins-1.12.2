@@ -22,9 +22,14 @@ Some modules may require other modules.
 There are several modules for different things... just use the ones you want :V
 Seriously, don't throw all of them if you don't need them!
 
+### Configuration
+
+Most of these mixins features can be disabled, just open the "mixin.modname.json" inside the jars and delete the correspondent class you do not want to be applied.
+
 ###### ExCompressum-Mixin
 
 * Reload the mod after the POST_INIT event to fix some sync issues with drop chances and JEI
+* Entirely disable AutoSieves Food Boost
 * Requirements:
   * ExCompressum Mod
 
