@@ -2,7 +2,8 @@
   "required": true,
   "package": "io.github.crucible.grimoire.mixins.excompressum",
   "mixins": [
-    "MixinExCompressum"
+    "MixinExCompressum",
+    "MixinTileAutoSieveBase"
   ],
   "server": [],
   "client": [],
