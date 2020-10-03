@@ -39,6 +39,12 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Requirements:
   * IndustrialForegoing Mod
   
+###### NetherEX-Mixin
+
+* Disable Spore Spread and Spore Effect Spawn outside of Nether
+* Requirements:
+  * NetherEX Mod
+  
 ###### ThaumCraft-Mixin
 
 * Attempt to "registerComplexObjectTags" assync, reducing StartupGame Time on large modpacks in more than 1 minute.
