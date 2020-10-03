@@ -32,6 +32,12 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Entirely disable AutoSieves Food Boost
 * Requirements:
   * ExCompressum Mod
+  
+###### ExNihiloCreatio-Mixin
+
+* Remove the light update logic from TileBarrel, this drastically improves the Barrel performance.
+* Requirements:
+  * ExNihiloCreatio Mod
 
 ###### IndustrialForegoing-Mixin
 
