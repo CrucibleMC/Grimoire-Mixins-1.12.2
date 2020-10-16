@@ -50,6 +50,7 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 ###### IndustrialForegoing-Mixin
 
 * Disable BlackHoleUnit EMPTY and FILL buttons, to prevent dupes on some rare cases.
+* Fix MobImprisonmentTool not respecting the MobDuplicator mob blacklist
 * Requirements:
   * IndustrialForegoing Mod
   
