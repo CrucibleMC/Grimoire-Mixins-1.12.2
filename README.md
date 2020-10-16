@@ -38,6 +38,8 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Entirely disable AutoSieves Food Boost
 * Requirements:
   * ExCompressum Mod
+* Target:
+  * CLIENT-SIDE & SERVER-SIDE
   
 ###### ExNihiloCreatio-Mixin
 
@@ -57,12 +59,21 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Requirements:
   * NetherEX Mod
   
+###### TechReborn-Mixin
+
+* Add blockBreak-event on ItemDynamicCell use action to prevent grief.
+* Requirements:
+  * TechReborn Mod
+  * EventHelper Mod
+  
 ###### ThaumCraft-Mixin
 
 * Attempt to "registerComplexObjectTags" assync, reducing StartupGame Time on large modpacks in more than 1 minute.
   * This is still being tested, may not be good for 'every case scenario'
 * Requirements:
   * ThaumCraft Mod
+* Target:
+  * CLIENT-SIDE & SERVER-SIDE
 
 ###### WorldEdit-Mixin
 
