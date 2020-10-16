@@ -4,7 +4,8 @@
   "mixins": [
     "MixinExCompressum",
     "MixinTileAutoSieveBase",
-    "MixinBlockAutoSieveBase"
+    "MixinBlockAutoSieveBase",
+    "MixinCompressedRecipeRegistry"
   ],
   "server": [],
   "client": [],
