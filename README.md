@@ -75,7 +75,13 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
   * ThaumCraft Mod
 * Target:
   * CLIENT-SIDE & SERVER-SIDE
+  
+###### TorchMaster-Mixin
 
+* Disables FeralFlareLantern as it causes, in some rare cases, constant chunk loading of chunks around it
+* Requirements:
+  * TorchMaster Mod
+  
 ###### WorldEdit-Mixin
 
 * When using some specific ID on a command, if the ID is not from a BLOCK, try to check if the ID is from an ItemBlock, if it is, get it's correct block id and replace it!
