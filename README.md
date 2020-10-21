@@ -54,6 +54,12 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Requirements:
   * IndustrialForegoing Mod
   
+###### MobGrindingUtils-Mixin
+
+* Fix a crash involving TileEntitySaw and Botania mod
+* Requirements:
+  * MobGrindingUtils Mod
+  
 ###### NetherEX-Mixin
 
 * Disable Spore Spread and Spore Effect Spawn outside of Nether
