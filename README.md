@@ -33,6 +33,12 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Target:
   * CLIENT-SIDE
   
+###### Botania-Mixin
+
+* Disable one of the effects of ItemBottledMana (the one that drops the entire player's inventory, as it can cause dupes)
+* Requirements:
+  * Botania Mod
+  
 ###### ExCompressum-Mixin
 
 * Reload the mod after the POST_INIT event to fix some sync issues with drop chances and JEI
