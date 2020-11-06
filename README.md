@@ -29,6 +29,7 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 ###### Forge-Mixin
 
 * Fix a bug ON THE CLIENT caused by mods that request ItemTooltiping before the client has fully started, in some cases where the user alt-tab on the launching process the startup can take from 3 minutes to 9 minutes long.
+* Add a IRecipe Cache to prevent lag on large modpacks with thousends of recipes on auto-craft machines
 * Target:
   * CLIENT-SIDE
   
