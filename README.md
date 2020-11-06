@@ -37,6 +37,7 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 
 * Reload the mod after the POST_INIT event to fix some sync issues with drop chances and JEI
 * Entirely disable AutoSieves Food Boost
+* Lots of Caching to prevent lag on various parts of the mod.
 * Requirements:
   * ExCompressum Mod
 * Target:
