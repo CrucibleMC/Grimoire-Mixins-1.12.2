@@ -38,14 +38,7 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Disable one of the effects of ItemBottledMana (the one that drops the entire player's inventory, as it can cause dupes)
 * Requirements:
   * Botania Mod
-  
-###### CustomNPCs-Mixin
 
-* Disable CustomNPcs ItemStackWrapper.register(event) as it can cause lag on servers that has lots of machines that transfer items.
-  - NOTE: If you use CustomNPCs's Scripiting Tool (mainly the ItemStack Part of it) do not use this MIXIN, will (probably) crash your game!
-* Requirements:
-  * CustomNPCs Mod
-  
 ###### ExCompressum-Mixin
 
 * Reload the mod after the POST_INIT event to fix some sync issues with drop chances and JEI
