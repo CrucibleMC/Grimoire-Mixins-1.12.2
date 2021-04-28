@@ -2,12 +2,11 @@ buildscript {
     repositories {
         mavenCentral()
         maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        maven {
+            url = 'https://repo.spongepowered.org/maven/'
         }
     }
     dependencies {
@@ -29,7 +28,7 @@ subprojects {
 
     minecraft {
         version = "1.12.2-14.23.4.2705"
-        mappings = "snapshot_20171212"
+        mappings = "stable_39"
         makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     }
 
@@ -42,13 +41,13 @@ subprojects {
     repositories {
         maven {
             name = 'spongepowered-repo'
-            url = 'http://repo.spongepowered.org/maven/'
+            url = 'https://repo.spongepowered.org/maven/'
         }
         mavenCentral()
     }
 
     dependencies {
-        compile "org.spongepowered:mixin:0.7.11-SNAPSHOT"
+        compile "org.spongepowered:mixin:0.8.1-SNAPSHOT"
         compileOnly 'org.jetbrains:annotations:16.0.2'
         compileOnly fileTree(dir: 'libs', include: ['*.jar'])
     }
