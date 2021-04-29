@@ -62,6 +62,12 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Requirements:
   * ExNihiloCreatio Mod
 
+###### ExtraBotany-Mixin
+
+* Fix ItemFirstFractal CLIENT_SIDE code being called on the server side
+* Requirements:
+  * ExtraBotany Mod
+
 ###### IndustrialForegoing-Mixin
 
 * Disable BlackHoleUnit EMPTY and FILL buttons, to prevent dupes on some rare cases.
