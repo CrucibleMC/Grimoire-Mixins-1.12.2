@@ -2,11 +2,12 @@ buildscript {
     repositories {
         mavenCentral()
         maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+            name = "forge"
+            url = "https://maven.minecraftforge.net"
         }
         maven {
-            url = 'https://repo.spongepowered.org/maven/'
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
     dependencies {
