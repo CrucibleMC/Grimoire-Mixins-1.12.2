@@ -25,10 +25,6 @@ import javax.annotation.Nonnull;
 @Mixin(value = ItemFireRod.class, remap = true)
 public abstract class MixinItemFireRod extends Item {
 
-    @Shadow @Final private static int COST;
-
-    @Shadow @Final private static int COOLDOWN;
-
     /**
      * @author EverNife
      * @reason
@@ -39,7 +35,7 @@ public abstract class MixinItemFireRod extends Item {
     @Override
     public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing side, float par8, float par9, float par10) {
         ItemStack stack = player.getHeldItem(hand);
-        if(!world.isRemote && ManaItemHandler.requestManaExactForTool(stack, player, COST, false)) {
+        if(!world.isRemote && ManaItemHandler.requestManaExactForTool(stack, player, 900, false)) {
             if (EventUtils.cantBreak(player, player.getPosition())){
                 return EnumActionResult.SUCCESS;
             }
@@ -47,9 +43,9 @@ public abstract class MixinItemFireRod extends Item {
             entity.setPosition(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5);
             player.world.spawnEntity(entity);
 
-            player.getCooldownTracker().setCooldown(this, IManaProficiencyArmor.Helper.hasProficiency(player, stack) ? COOLDOWN / 2 : COOLDOWN);
+            player.getCooldownTracker().setCooldown(this, IManaProficiencyArmor.Helper.hasProficiency(player, stack) ? 1200 / 2 : 1200);
 
-            ManaItemHandler.requestManaExactForTool(stack, player, COST, true);
+            ManaItemHandler.requestManaExactForTool(stack, player, 900, true);
             world.playSound(null, player.posX, player.posY, player.posZ, SoundEvents.ENTITY_BLAZE_AMBIENT, SoundCategory.PLAYERS, 1F, 1F);
 
             // Fix up rods from old versions which used meta instead of cooldown tracker

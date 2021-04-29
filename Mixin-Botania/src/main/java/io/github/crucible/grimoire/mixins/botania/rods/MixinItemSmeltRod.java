@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import vazkii.botania.common.item.equipment.tool.ToolCommons;
 import vazkii.botania.common.item.rod.ItemSmeltRod;
 
-@Mixin(value = ItemSmeltRod.class, remap = true)
+@Mixin(value = ItemSmeltRod.class, remap = false)
 public abstract class MixinItemSmeltRod extends Item {
 
     /**
@@ -24,9 +24,9 @@ public abstract class MixinItemSmeltRod extends Item {
      * @return
      */
     @Redirect(method = "onUsingTick", at = @At(value = "INVOKE", target = "Lvazkii/botania/common/item/equipment/tool/ToolCommons;raytraceFromEntity(Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;ZD)Lnet/minecraft/util/math/RayTraceResult;"), require = 1)
-    private static RayTraceResult place(World worldIn, Entity playerIn, boolean useLiquids, double range) {
+    private RayTraceResult place(World worldIn, Entity playerIn, boolean useLiquids, double range) {
         RayTraceResult result = ToolCommons.raytraceFromEntity(worldIn, playerIn, false, 32.0D);
-        if (EventUtils.cantBreak((EntityPlayer) playerIn, result.getBlockPos())){
+        if (result != null && EventUtils.cantBreak((EntityPlayer) playerIn, result.getBlockPos())){
             return null;
         }
         return result;

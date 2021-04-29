@@ -25,12 +25,10 @@ import vazkii.botania.common.item.rod.ItemMissileRod;
 
 import javax.annotation.Nonnull;
 
-@Mixin(value = ItemMissileRod.class, remap = true)
+@Mixin(value = ItemMissileRod.class, remap = false)
 public abstract class MixinItemMissileRod extends Item {
 
     @Shadow public abstract boolean spawnMissile(World world, EntityLivingBase thrower, double x, double y, double z);
-
-    @Shadow @Final private static int COST_PER;
 
     /**
      * @author EverNife
@@ -47,9 +45,9 @@ public abstract class MixinItemMissileRod extends Item {
             return;
         }
 
-        if(count != getMaxItemUseDuration(stack) && count % (IManaProficiencyArmor.Helper.hasProficiency(player, stack) ? 1 : 2) == 0 && !player.world.isRemote && ManaItemHandler.requestManaExactForTool(stack, player, COST_PER, false)) {
+        if(count != getMaxItemUseDuration(stack) && count % (IManaProficiencyArmor.Helper.hasProficiency(player, stack) ? 1 : 2) == 0 && !player.world.isRemote && ManaItemHandler.requestManaExactForTool(stack, player, 120, false)) {
             if(spawnMissile(player.world, player, player.posX + (Math.random() - 0.5 * 0.1), player.posY + 2.4 + (Math.random() - 0.5 * 0.1), player.posZ + (Math.random() - 0.5 * 0.1)))
-                ManaItemHandler.requestManaExactForTool(stack, player, COST_PER, true);
+                ManaItemHandler.requestManaExactForTool(stack, player, 120, true);
 
             Botania.proxy.sparkleFX(player.posX, player.posY + 2.4, player.posZ, 1F, 0.4F, 1F, 6F, 6);
         }

@@ -185,7 +185,7 @@ public abstract class MixinItemBottledMana {
      *
      * small order changed on this logic
      */
-    @Overwrite//onItemUseFinish
+    @Overwrite(remap = false)//onItemUseFinish
     @Nonnull
     public ItemStack func_77654_b(@Nonnull ItemStack par1ItemStack, World world, EntityLivingBase living) {
         randomEffect(living, par1ItemStack);
