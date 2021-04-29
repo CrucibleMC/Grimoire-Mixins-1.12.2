@@ -36,8 +36,15 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 ###### Botania-Mixin
 
 * Disable one of the effects of ItemBottledMana (the one that drops the entire player's inventory, as it can cause dupes)
+* Add EventHelper checks for the rods:
+    * ItemDirtRod
+    * ItemExchangeRod
+    * ItemFireRod
+    * ItemMissileRod
+    * ItemSmeltRod
 * Requirements:
   * Botania Mod
+  * EventHelper Mod
 
 ###### ExCompressum-Mixin
 
