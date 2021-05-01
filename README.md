@@ -32,6 +32,13 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Add a IRecipe Cache to prevent lag on large modpacks with thousends of recipes on auto-craft machines
 * Target:
   * CLIENT-SIDE
+
+###### ArmourersWorkshop-Mixin
+
+* Add BREAK_EVENT checks on ANY mannequin change to prevent edit of mannequins on protected zone
+  * I can't fix the Visual bug though, sorry :/
+* Requirements:
+  * Armourers Workshop
   
 ###### Botania-Mixin
 
