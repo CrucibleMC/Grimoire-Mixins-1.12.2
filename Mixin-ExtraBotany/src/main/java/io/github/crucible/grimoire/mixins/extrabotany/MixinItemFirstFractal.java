@@ -20,4 +20,16 @@ public abstract class MixinItemFirstFractal {
     public void leftClick(PlayerInteractEvent.LeftClickEmpty evt) {
         //Do nothing
     }
+
+    /**
+     * @author EverNife
+     * @reason
+     *
+     * This should only be execute on the ClientSide
+     */
+    @Overwrite
+    @SubscribeEvent
+    public void leftClick(PlayerInteractEvent.LeftClickBlock evt) {
+        //Do nothing
+    }
 }
