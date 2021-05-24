@@ -1,7 +1,9 @@
 {
   "required": true,
   "package": "io.github.crucible.grimoire.mixins.extrabotany",
-  "mixins": [],
+  "mixins": [
+    "MixinEntitySubspace"
+  ],
   "server": [
     "MixinItemFirstFractal"
   ],
