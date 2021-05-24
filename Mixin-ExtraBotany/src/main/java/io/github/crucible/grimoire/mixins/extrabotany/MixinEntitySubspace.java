@@ -101,12 +101,13 @@ public abstract class MixinEntitySubspace extends EntityThrowableCopy {
                     if (!(thrower instanceof EntityVoidHerrscher))
                         setDead();
                     EntityVoidHerrscher herr = (EntityVoidHerrscher) getThrower();
-                    if (herr.getPlayersAround().isEmpty())
+                    if (herr.getPlayersAround().isEmpty()) {
                         setDead();
-                    //[GRIMOIRE START]
-                    else
-                    //[GRIMOIRE END]
-                        if (ExtraBotanyAPI.cantAttack(thrower, herr.getPlayersAround().get(0))) { //Missed an ELSE here
+                        //[GRIMOIRE START]
+                        return;
+                        //[GRIMOIRE END]
+                    }
+                    if (ExtraBotanyAPI.cantAttack(thrower, herr.getPlayersAround().get(0))) {
                         setDead();
                     }
                     EntityManaBurst burst = ItemExcaliber.getBurst(herr.getPlayersAround().get(0),
