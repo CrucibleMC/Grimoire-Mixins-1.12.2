@@ -115,6 +115,17 @@ Most of these mixins features can be disabled, just open the "mixin.modname.json
 * Disables FeralFlareLantern as it causes, in some rare cases, constant chunk loading of chunks around it
 * Requirements:
   * TorchMaster Mod
+
+###### TwilightForest-Mixin
+
+* Add blockBreak-event on Zombie Wand use action to prevent grief.
+* Add blockBreak-event on Transform Powder use action to prevent grief.
+* Add blockBreak-event on Ore Magnet use action to prevent grief.
+* Add blockBreak-event on Crumble Horn use action to prevent grief.
+* Add blockBreak-event on Ice Bomb use action to prevent grief.
+* Add blockBreak-event on MoonWorm use action to prevent grief.
+* Requirements:
+  * TwilightForest Mod
   
 ###### WorldEdit-Mixin
 
