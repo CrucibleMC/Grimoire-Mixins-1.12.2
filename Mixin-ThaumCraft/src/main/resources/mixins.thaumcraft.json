@@ -2,7 +2,8 @@
   "required": true,
   "package": "io.github.crucible.grimoire.mixins.thaumcraft",
   "mixins": [
-    "MixinThaumCraftAPI"
+    "MixinThaumCraftAPI",
+    "MixinBlockSmelter"
   ],
   "server": [],
   "client": [],
