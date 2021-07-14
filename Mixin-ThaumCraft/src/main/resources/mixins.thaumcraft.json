@@ -3,7 +3,8 @@
   "package": "io.github.crucible.grimoire.mixins.thaumcraft",
   "mixins": [
     "MixinThaumCraftAPI",
-    "MixinBlockSmelter"
+    "MixinBlockSmelter",
+    "MixinBlockUtils"
   ],
   "server": [],
   "client": [],
