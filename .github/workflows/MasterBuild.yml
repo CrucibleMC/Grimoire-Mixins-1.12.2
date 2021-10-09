@@ -28,7 +28,7 @@ jobs:
 
       - name: Create sha_shot variable
         id: vars
-        run: echo "::set-output name=sha_short::$(git rev-parse --short ${{ github.event.pull_request.head.sha }})"
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
