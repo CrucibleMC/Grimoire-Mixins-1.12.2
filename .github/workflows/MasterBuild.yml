@@ -17,6 +17,9 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: Build with Gradle
         run: ./gradlew cleanCache clean build_them_all --refresh-dependencies
 
