@@ -30,18 +30,19 @@ jobs:
         id: vars
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
 
+      - name: Delete latest Dev Release
       - uses: dev-drprasad/delete-tag-and-release@v0.2.0
         with:
           delete_release: true
-          tag_name: latest # tag name to delete
+          tag_name: latest.dev # tag name to delete
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create Release
+      - name: Create latest Dev Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: latest
-          prerelease: false
-          name: Latest Build - ${{ steps.vars.outputs.sha_short }}
+          tag_name: latest.dev
+          prerelease: true
+          name: Latest Dev Build - ${{ steps.vars.outputs.sha_short }}
           files: |
             dist/*.jar
