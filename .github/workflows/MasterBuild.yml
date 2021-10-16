@@ -10,26 +10,10 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - name: Delete latest.dev tag
+      - name: Delete dev-7d61aea tag
         uses: dev-drprasad/delete-tag-and-release@v0.2.0
         with:
           delete_release: true
-          tag_name: latest.dev # tag name to delete
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Delete 7d61aea tag
-        uses: dev-drprasad/delete-tag-and-release@v0.2.0
-        with:
-          delete_release: true
-          tag_name: 7d61aea # tag name to delete
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Delete latest tag
-        uses: dev-drprasad/delete-tag-and-release@v0.2.0
-        with:
-          delete_release: true
-          tag_name: latest # tag name to delete
+          tag_name: dev-7d61aea # tag name to delete
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
