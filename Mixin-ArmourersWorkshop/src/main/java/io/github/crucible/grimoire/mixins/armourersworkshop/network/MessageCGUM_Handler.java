@@ -18,7 +18,7 @@ public abstract class MessageCGUM_Handler {
 
     /**
      * @author EverNife
-     * @reason Fire a break-event before opening a manequin!
+     * @reason Fire a break-event before opening a mannequin!
      *
      * This could be done in any other place, but why not use this event handler?
      */
