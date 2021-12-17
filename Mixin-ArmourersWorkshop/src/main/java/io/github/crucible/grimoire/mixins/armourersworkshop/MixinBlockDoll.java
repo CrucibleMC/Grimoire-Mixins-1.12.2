@@ -2,20 +2,18 @@ package io.github.crucible.grimoire.mixins.armourersworkshop;
 
 import com.gamerforea.eventhelper.util.EventUtils;
 import moe.plushie.armourers_workshop.common.init.blocks.AbstractModBlockContainer;
-import moe.plushie.armourers_workshop.common.init.blocks.BlockMannequin;
+import moe.plushie.armourers_workshop.common.init.blocks.BlockDoll;
 import moe.plushie.armourers_workshop.common.lib.EnumGuiId;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.Shadow;
 
-@Mixin(value = BlockMannequin.class, remap = false)
+@Mixin(value = BlockDoll.class, remap = false)
 public abstract class MixinBlockDoll extends AbstractModBlockContainer {
 
     public MixinBlockDoll(Object a) {
@@ -25,7 +23,7 @@ public abstract class MixinBlockDoll extends AbstractModBlockContainer {
 
     /**
      * @author EverNife
-     * @reason Fire a break-event before opening a manequin!
+     * @reason Fire a break-event before opening a doll!
      */
     @Overwrite
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
