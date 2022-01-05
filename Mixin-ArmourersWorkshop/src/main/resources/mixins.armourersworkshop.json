@@ -1,15 +1,17 @@
 {
   "required": true,
   "package": "io.github.crucible.grimoire.mixins.armourersworkshop",
-  "mixins":[
+  "mixins":[],
+  "server": [
     "MixinBlockDoll",
     "MixinBlockMannequin",
     "MixinEntityMannequin",
     "network.MixinMessageClientGuiUpdateMannequin",
     "network.MessageCGUM_Handler"
   ],
-  "server": [],
-  "client": [],
+  "client": [
+    "client.MixinEntityTextureInfo"
+  ],
   "compatibilityLevel": "JAVA_8",
   "minVersion": "0.7.11",
   "target": "@env(DEFAULT)",
