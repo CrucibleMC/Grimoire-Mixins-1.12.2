@@ -94,7 +94,7 @@ subprojects {
             ant.mkdir(dir: DIST_DIR)
             ant.copy(todir: DIST_DIR) {
                 fileset(dir: SRC_DIR,
-                        includes: "${baseName}*${version}*.jar,${baseName}*${version}*.jar")
+                        includes: "${baseName}*.jar,${baseName}*.jar")
             }
         }
     }
