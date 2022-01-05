@@ -1,7 +1,6 @@
 description = "A coremod full of patches and fixes made from black magic and suffering."
 
 archivesBaseName = "Botania-Mixin"
-version = "1.0.1a"
 
 
 dependencies {

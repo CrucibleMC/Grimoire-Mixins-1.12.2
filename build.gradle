@@ -38,7 +38,6 @@ subprojects {
     }
 
     group = 'io.github.crucible'
-    version = '1.0.1a'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
     compileJava.options.encoding = 'UTF-8'
